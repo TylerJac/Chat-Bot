@@ -201,9 +201,9 @@ public class ChatBot {
         System.out.println("What does void do?");
         System.out.println("A) I don't know   B) Something   C) allows for return statements");
         String correct = "C";
+        // Required redundant statement so it doesn't
         String answer = scan.nextLine();
         answer = scan.nextLine();
-
         count++;
         while (!(answer.equalsIgnoreCase(correct))){
             count++;
