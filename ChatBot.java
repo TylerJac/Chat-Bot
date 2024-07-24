@@ -174,6 +174,8 @@ public class ChatBot {
                                                 }
                                             } else {
                                                 System.out.println("It seems you are too old");
+                                                String i = "100+";
+                                                users_data.add(i);
                                             }
                                         }
                                     }
