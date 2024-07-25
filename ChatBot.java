@@ -25,7 +25,7 @@ public class ChatBot {
 
     // Asking for username
     public static void username(){
-        System.out.print("I'm sorry, what was your name again? ");
+        System.out.println("I'm sorry, what was your name again? ");
         String userName = scan.nextLine();
         users_data.add(userName);
 
@@ -189,7 +189,7 @@ public class ChatBot {
     }
     public static void count(){
         System.out.println("Give me a number");
-        int num = scan.nextInt();
+        int num = Integer.parseInt(scan.nextLine());
         for (int i = 0; i <= num; i++) {
                 System.out.println(i);
         }
@@ -201,9 +201,7 @@ public class ChatBot {
         System.out.println("What does void do?");
         System.out.println("A) I don't know   B) Something   C) allows for return statements");
         String correct = "C";
-        // Required redundant statement so it doesn't
         String answer = scan.nextLine();
-        answer = scan.nextLine();
         count++;
         while (!(answer.equalsIgnoreCase(correct))){
             count++;
@@ -217,7 +215,7 @@ public class ChatBot {
     public static void story(){
         System.out.println("I know you are " +users_data.get(1) +",\n I know you are a young " + users_data.get(2)
                 +" years old,\n I know you made me count to " + users_data.get(3) +
-                ",\n I know you took " + users_data.get(4) + " guesses for the quiz,\n and you were feeling "
+                ",\n I know you took " + users_data.get(4) + " guess(es) for the quiz,\n and you were feeling "
                 + users_data.get(0) + " today.");
     }
 }
