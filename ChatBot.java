@@ -15,7 +15,7 @@ public class ChatBot {
 
     // Greeting message
     public static void greeting(){
-        System.out.println("Hello! I'm your friendly chatbot, How are you today?");
+        System.out.println("Hello! I'm your Byte! Your friendly chatbot, How are you today?");
         String info = scan.nextLine();
         System.out.println("that's " + info);
         users_data.add(info);
@@ -199,7 +199,7 @@ public class ChatBot {
     public static void testing(){
         int count = 0;
         System.out.println("What does void do?");
-        System.out.println("A) I don't know   B) Something   C) allows for return statements");
+        System.out.println("A) I don't know   B) Something   C) allows for return statements  D) ChatGPT told me...");
         String correct = "C";
         String answer = scan.nextLine();
         count++;
@@ -213,10 +213,43 @@ public class ChatBot {
         users_data.add(strCount);
     }
     public static void story(){
-        System.out.println("I know you are " +users_data.get(1) +",\n I know you are a young " + users_data.get(2)
-                +" years old,\n I know you made me count to " + users_data.get(3) +
-                ",\n I know you took " + users_data.get(4) + " guess(es) for the quiz,\n and you were feeling "
-                + users_data.get(0) + " today.");
+        System.out.println(
+                "Once upon a time in a small, bustling town, there was a quirky little computer named Byte.\n " +
+                        "Byte lived in a cozy corner of a tech lab, surrounded by humming servers and flashing lights." +
+                        " Byte had a unique " +
+                        "gift: it could talk to the people who used it.\n One day, a young user named " + users_data.get(1) +
+                        " sat down at Byte's terminal.\n\n" +
+                        users_data.get(1) + " was feeling a mix of excitement and curiosity. They were about to interact with " +
+                        "Byte for the first time.\n " + users_data.get(1) + " had been hearing stories about Byte's uncanny " +
+                        "ability to know things about its users, and today was the day to see if the rumors were true.\n\n" +
+                        users_data.get(1) + " typed in their information and hit the \"Enter\" key. Byte's screen flickered " +
+                        "for a moment before displaying a message:\n\n" +
+                        "\"I know you are " + users_data.get(1) + ",\" Byte began, the words appearing line by line on the " +
+                        "screen. " + users_data.get(1) + "'s eyes widened in surprise.\n\n" +
+                        "\"I know you are a young " + users_data.get(2) + " years old,\" Byte continued, causing " +
+                        users_data.get(1) + " to smile. It was right again.\n\n" +
+                        "\"I know you made me count to " + users_data.get(3) + ",\" Byte said, and " + users_data.get(1) +
+                        " chuckled, remembering the counting game they had played earlier.\n\n" +
+                        "\"I know you took " + users_data.get(4) + " guess(es) for the quiz,\" Byte went on, accurately " +
+                        "recounting " + users_data.get(1) + "'s attempts to solve the tricky questions.\n\n" +
+                        "\"And you were feeling " + users_data.get(0) + " today,\" Byte concluded, capturing " +
+                        users_data.get(1) + "'s mood perfectly.\n\n" +
+                        users_data.get(1) + " stared at the screen, amazed by Byte's ability to gather and remember these " +
+                        "details. It was as if Byte had been watching and understanding them all along.\n\n" +
+                        "\"How do you know all this?\" " + users_data.get(1) + " typed, curiosity getting the better of them.\n\n" +
+                        "Byte's screen lit up with a cheerful response, \"I am programmed to learn from our interactions. " +
+                        "The more we talk, the more I know.\n It's like we're getting to know each other better every time " +
+                        "you visit.\"\n\n" +
+                        users_data.get(1) + " smiled, feeling a connection with Byte that was more than just user and machine. " +
+                        "\n It was the beginning of a unique friendship, one where " + users_data.get(1) + " could share their " +
+                        "thoughts and Byte would always listen and remember.\n\n" +
+                        "From that day forward, " + users_data.get(1) + " and Byte had many adventures together in the " +
+                        "digital world. They played games, solved puzzles, and even embarked on coding projects.\n Byte became " +
+                        users_data.get(1) + "'s trusty companion, always ready with a witty response or a helpful tip.\n\n" +
+                        "And so, in the quiet corners of the tech lab, Byte and " + users_data.get(1) + "'s friendship grew, " +
+                        "proving that sometimes, the best friendships can be found in the most unexpected places."
+        );
+
     }
 }
 
